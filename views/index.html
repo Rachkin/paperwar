@@ -1,0 +1,68 @@
+<html>
+  <head>
+    <title>Наша многопользовательская игра</title>
+    <style>
+      canvas {
+        width: 800px;
+        height: 600px;
+        border: 5px solid black;
+
+      }
+      .nick{
+        text-align: left;
+      }
+
+    </style>
+    <script src="/socket.io/socket.io.js?x76964"></script>
+  </head>
+  <body>
+    <table rules="cols" align="center" cellpadding="10">
+      <tr>
+        <td>
+          <h1 align="center">Sign In</h1>
+        </td>
+        <td>
+          <h1 align="center">Sign Up</h1>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div id="ErrorSignIn"><span id="InErr"></span></div>
+        </td>
+        <td>
+          <div id="ErrorSignUp"><span id="UpErr"></span></div>
+        </td>
+      </tr>
+      <tr>
+        <td valign="top">
+          <a id="nick">Nick:</a>
+          <br>
+          <input type="text" id="nickname_l">
+          <br>
+          Password:
+          <br>
+          <input type="text" id="password_l">
+          <br>
+          <input type="button" id="btn_l" value="Join">
+        </td>
+        <td>
+          <a id="nick">Nick:</a>
+          <br>
+          <input type="text" id="nickname_r">
+          <br>
+          Password:
+          <br>
+          <input type="text" id="password_r1">
+          <br>
+          Repeat password:
+          <br>
+          <input type="text" id="password_r2">
+          <br>
+          <input type="button" id="btn_r" value="Sign Up">
+        </td>
+      </tr>
+    </table>
+
+  </body>
+  <script src="/static/index.js?x76964"></script>
+</html>
